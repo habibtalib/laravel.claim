@@ -10,7 +10,7 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-
+   protected $appends = array('UrlAvatar');
 
     // protected $fillable = [
     //     'name', 'email', 'password','token','verified','chat_status',
@@ -25,8 +25,8 @@ class User extends Authenticatable
         'password','remember_token',
     ];
 
-
-
-
+    public function getUrlAvatarAttribute(){
+        return asset("upload/avatars")  . '/' . $this->avatar ; 
+    }
 
 }

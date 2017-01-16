@@ -7,6 +7,26 @@ Event::listen('auth.last_login', function($user){
 });
 
 
+// Route::get('user/', ['uses' => 'TrClaim@apiClaim','as' => 'api.apiClaim']);
+
+
+// 'cors' => \App\Http\Middleware\Cors::class, // <<< add this line
+// Route::get('user/', ['uses' => 'TrClaim@apiClaim','as' => 'api.apiClaim']);
+
+// Route::get('userApi', ['middleware' => 'cors', function()
+// {
+//     return \Response::json(\App\Brewery::with('beers', 'geocode')->paginate(10), 200);
+// }]);
+// Route::get('/', ['uses'=>'\App\Http\Controllers\Auth\LoginController@showLoginForm'] );
+
+
+
+// Route::group(['middleware' => 'cors'], function()
+// {
+// 	Route::get('/v1/example/{code}', 'Controller@method');
+// });
+
+
 
 
 

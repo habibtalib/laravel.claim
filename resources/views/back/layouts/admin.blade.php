@@ -3,10 +3,16 @@
   <head>
     <title>{{ config('app.name', 'Iloilo|Finest') }}</title>
 
+
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' 'unsafe-inline' *; object-src 'self'; style-src 'self' 'unsafe-inline'; media-src *">
+
+
+    {{-- access control allow origin
+    content type application json charset  --}}
     
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta  name="csrf-token" content="{{ csrf_token() }}">
 
